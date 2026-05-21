@@ -1,6 +1,13 @@
-# Study Hours vs Marks Prediction using Linear Regression
+# 📘 Study Hours vs Marks Prediction using Linear Regression
 
-A beginner-friendly Machine Learning project that predicts student marks based on study hours using Linear Regression.
+A beginner-friendly Machine Learning project that predicts student marks based on study hours using **Linear Regression**.
+
+This repository focuses on understanding:
+- Machine Learning basics
+- Supervised Learning
+- Linear Regression
+- Mathematical foundation behind predictions
+- Model training and saving
 
 ---
 
@@ -38,6 +45,100 @@ and predicts marks for new study hours.
 - ✅ Regression graph visualization
 - ✅ Model saving using Pickle (`.pkl`)
 - ✅ Prediction using saved model
+- ✅ Beginner-friendly mathematical explanation
+- ✅ Handwritten learning notes included
+
+---
+
+# 🧠 Machine Learning Concept
+
+Machine Learning is mainly divided into:
+
+- Supervised Learning
+- Unsupervised Learning
+
+This project uses:
+
+## Supervised Learning
+
+Where:
+- Input data contains labels
+- Model learns from known outputs
+
+Example:
+- Study Hours → Input
+- Marks → Output
+
+---
+
+# 📈 Linear Regression
+
+Linear Regression is a supervised learning algorithm used to model the relationship between:
+
+- One dependent variable
+- One or more independent variables
+
+In this project:
+
+- Independent Variable → Study Hours
+- Dependent Variable → Marks Scored
+
+It predicts continuous values by fitting a straight line that best represents the data.
+
+---
+
+# 📐 Linear Regression Formula
+
+The model uses:
+
+\[
+y = wx + b
+\]
+
+Where:
+
+- `x` → input feature
+- `y` → predicted output
+- `w` → weight/slope
+- `b` → bias/intercept
+
+Learned equation from the dataset:
+
+\[
+y = 6.58x + 28.11
+\]
+
+---
+
+# 📚 Mathematical Foundation & Notes
+
+The `images/` folder contains handwritten notes and visual explanations covering:
+
+- Supervised Learning basics
+- Linear Regression intuition
+- Dependent vs Independent variables
+- Regression line understanding
+- Formula derivation
+- Weight calculation
+- Bias calculation
+- Dataset tabulation
+- Step-by-step mathematical substitution
+
+These notes are included for beginners who want to understand the mathematics behind Linear Regression instead of only using libraries.
+
+---
+
+# 📂 Additional Learning Dataset
+
+An additional synthetic dataset:
+
+```text
+house_price_sqft_dataset.csv
+```
+
+is also included for learners who want to further experiment with Linear Regression concepts using house price prediction.
+
+This dataset is provided for educational exploration purposes.
 
 ---
 
@@ -48,30 +149,7 @@ and predicts marks for new study hours.
 - NumPy
 - scikit-learn
 - Matplotlib
-- Joblib
-
----
-
-# 📈 Linear Regression Equation
-
-The model uses:
-
-\[
-y = wx + b
-\]
-
-Where:
-
-- `x` = study hours
-- `y` = predicted marks
-- `w` = weight/slope
-- `b` = bias/intercept
-
-Learned equation:
-
-\[
-y = 6.58x + 28.11
-\]
+- Pickle / Joblib
 
 ---
 
@@ -97,16 +175,15 @@ pip install -r requirements.txt
 
 ---
 
-# 🧠 Train the Model
+# 🧪 Train the Model
 
 Run:
 
 ```bash
-python train.py
+python main.py
 ```
 
 This will:
-
 - Load dataset
 - Train model
 - Display regression graph
@@ -119,7 +196,7 @@ This will:
 Run:
 
 ```bash
-python predict.py
+python Predict.py
 ```
 
 Example prediction:
@@ -132,10 +209,12 @@ Predicted Marks: 107.07
 
 # 📊 Visualization
 
-The regression line shows the relationship between:
+The regression line visually represents the relationship between:
 
-- Study hours
-- Marks scored
+- Study Hours
+- Marks Scored
+
+showing how predictions are made using a best-fit straight line.
 
 ---
 
@@ -144,10 +223,10 @@ The regression line shows the relationship between:
 The trained model is saved as:
 
 ```text
-linear_regression_model.pkl
+marks_prediction.pkl
 ```
 
-This allows prediction without retraining.
+This allows predictions without retraining the model every time.
 
 ---
 
@@ -156,10 +235,16 @@ This allows prediction without retraining.
 ```text
 Linear_Regression/
 │
-├── dataset.csv
-├── train.py
-├── predict.py
-├── linear_regression_model.pkl
+├── images/
+│   ├── handwritten_notes
+│   ├── mathematical_explanations
+│   └── regression_visuals
+│
+├── Predict.py
+├── main.py
+├── marks dataset.csv
+├── house_price_sqft_dataset.csv
+├── marks_prediction.pkl
 ├── requirements.txt
 └── README.md
 ```
@@ -169,3 +254,9 @@ Linear_Regression/
 # 👨‍💻 Author
 
 Vishwa
+
+---
+
+# ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
